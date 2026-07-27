@@ -1,0 +1,31 @@
+{
+  "name": "genpark-automated-ad-campaign-data-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Turns raw analytics data into automated multi-channel ad campaign copy & visuals.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "ad-automation",
+    "campaign-generator",
+    "marketing-copy",
+    "ph-july27"
+  ],
+  "inputs": {
+    "product_analytics": {
+      "type": "object"
+    },
+    "target_channels": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "generated_campaigns": {
+      "type": "array"
+    },
+    "estimated_ctr": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
